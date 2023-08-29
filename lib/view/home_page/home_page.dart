@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:goatreport/view/add_entry_page.dart';
-import 'package:goatreport/view/category_card.dart';
+import 'package:goatreport/view/add_entry_page/add_entry_page.dart';
+import 'package:goatreport/view/graph_view_page/chart_graph_data/circular_chart.dart';
+
+import 'package:goatreport/view/graph_view_page/graph_view_page.dart';
+import 'package:goatreport/view/graph_view_page/chart_graph_data/line_chart_default.dart';
+import 'package:goatreport/view/home_page/widgets/category_card.dart';
+import 'package:goatreport/view/temp_pages/temp_page1.dart';
 import 'package:goatreport/view/tracker_page/tracker_homepage.dart';
 import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
+
+import '../graph_view_page/chart_graph_data/area_chart.dart';
+import '../user_preference_page.dart';
 
 class HomePage extends StatefulWidget {
    HomePage({Key? key}) : super(key: key);
@@ -17,15 +25,15 @@ class _HomePageState extends State<HomePage> {
   List<_ChartData>? chartData;
 
   @override void initState() {
-    chartData = <_ChartData>[
-      _ChartData(2005, 21, 28),
-      _ChartData(2006, 24, 44),
-      _ChartData(2007, 36, 48),
-      _ChartData(2008, 38, 50),
-      _ChartData(2009, 54, 66),
-      _ChartData(2010, 57, 78),
-      _ChartData(2011, 70, 84)
-    ];
+    // chartData = <_ChartData>[
+    //   _ChartData(2005, 21, 28),
+    //   _ChartData(2006, 24, 44),
+    //   _ChartData(2007, 36, 48),
+    //   _ChartData(2008, 38, 50),
+    //   _ChartData(2009, 54, 66),
+    //   _ChartData(2010, 57, 78),
+    //   _ChartData(2011, 70, 84)
+    // ];
     super.initState();
   }
 
@@ -60,7 +68,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Get.to(()=>TempPage1());
+            },
             icon: const Icon(
               Icons.display_settings_rounded,
               color: Colors.black,
@@ -99,11 +109,39 @@ class _HomePageState extends State<HomePage> {
                       );
                     }),
               ),
-              CategoryCard(title: 'Factors', categoryIcon: Icon(Icons.assistant_navigation),),
-              CategoryCard(title: 'Steps', categoryIcon: Icon(Icons.directions_walk_rounded),),
-              CategoryCard(title: 'Energy', categoryIcon: Icon(Icons.battery_charging_full_outlined),),
-              CategoryCard(title: 'Exercise', categoryIcon: Icon(Icons.fitness_center_rounded),),
-              CategoryCard(title: 'Sleep', categoryIcon: Icon(Icons.bedtime_outlined),),
+              CategoryCard(title: 'Factors', categoryIcon: const Icon(Icons.assistant_navigation), buttonOnTap: () {
+                Get.to(()=>const TrackerHomePage());
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Factors', categoryPageIcon: const Icon(Icons.assistant_navigation), categoryChart: LineChartDefault(),));
+              }, categoryChart: LineChartDefault(),),
+
+              CategoryCard(title: 'Symptoms', categoryIcon: const Icon(Icons.medication_liquid_outlined), buttonOnTap: () {
+                Get.to(()=>TrackerHomePage());
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Symptoms', categoryPageIcon: Icon(Icons.medication_liquid_outlined), categoryChart: LineChartDefault(),));
+              }, categoryChart: LineChartDefault(),),
+              CategoryCard(title: 'Steps', categoryIcon: Icon(Icons.directions_walk_rounded), buttonOnTap: () {
+                Get.to(()=>AddEntryPage(title: 'Steps', cardIcon: Icons.directions_walk_rounded,));
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Steps', categoryPageIcon: Icon(Icons.directions_walk_rounded), categoryChart: LineChartDefault(),));
+              }, categoryChart: LineChartDefault(),),
+              CategoryCard(title: 'Energy', categoryIcon: Icon(Icons.battery_charging_full_outlined), buttonOnTap: () {
+                Get.to(()=>AddEntryPage(title: 'Energy', cardIcon: Icons.battery_charging_full_outlined,));
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Energy', categoryPageIcon: Icon(Icons.battery_charging_full_outlined), categoryChart: CircularChart(),));
+              }, categoryChart:CircularChart(),),
+
+              CategoryCard(title: 'Exercise', categoryIcon: Icon(Icons.fitness_center_rounded), buttonOnTap: () {
+                Get.to(()=>AddEntryPage(title: 'Exercise', cardIcon: Icons.fitness_center_rounded,));
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Exercise', categoryPageIcon: Icon(Icons.fitness_center_rounded), categoryChart: LineChartDefault(),));
+              }, categoryChart: LineChartDefault(),),
+
+              CategoryCard(title: 'Sleep', categoryIcon: Icon(Icons.bedtime_outlined), buttonOnTap: () {
+                Get.to(()=>AddEntryPage(title: 'Sleep', cardIcon: Icons.bedtime_outlined,));
+              }, onTap: () {
+                Get.to(()=>GraphViewPage(categoryPageTitle: 'Sleep', categoryPageIcon: Icon(Icons.bedtime_outlined), categoryChart:AreaChart(),));
+              }, categoryChart: AreaChart(),),
 
               Padding(
                 padding: const EdgeInsets.all(16.0),
@@ -121,7 +159,7 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.purple.shade900,
         onPressed: () {
-          Get.to(() => AddEntryPage());
+          Get.to(() => UserPreferencePage());
         },
         child: const Icon(Icons.add_chart,color: Colors.white,),
       ),

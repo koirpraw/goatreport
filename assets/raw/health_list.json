@@ -311,5 +311,109 @@
                 ]
             }
         ]
+    },
+    {
+        "header_name": "Events",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 6,
+                "tag_name": "Mental",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Mental",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Mental",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Mental",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 7,
+                "tag_name": "Physical",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 28,
+                        "tag_id": 7,
+                        "category_name": "Fever",
+                        "category_type": "Physical",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 29,
+                        "tag_id": 7,
+                        "category_name": "Back pain",
+                        "category_type": "Physical",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 30,
+                        "tag_id": 7,
+                        "category_name": "Tooth ache",
+                        "category_type": "Physical",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 31,
+                        "tag_id": 7,
+                        "category_name": "Head ache",
+                        "category_type": "Physical",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 8,
+                "tag_name": "Digestive",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 32,
+                        "tag_id": 8,
+                        "category_name": "Constipation",
+                        "category_type": "Digestive",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 33,
+                        "tag_id": 8,
+                        "category_name": "Stomach ache",
+                        "category_type": "Digestive",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 34,
+                        "tag_id": 8,
+                        "category_name": "Nausea",
+                        "category_type": "Digestive",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 35,
+                        "tag_id": 8,
+                        "category_name": "Indigestion",
+                        "category_type": "Digestive",
+                        "category_status": 1
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -3,12 +3,14 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:goatreport/view/graph_view_page/widgets/date_time_custom_button.dart';
+import 'package:goatreport/view/user_preference_page.dart';
 import 'package:intl/intl.dart';
 
-
-
 class AddEntryPage extends StatefulWidget {
-  AddEntryPage({Key? key}) : super(key: key);
+  AddEntryPage({Key? key, required this.title, required this.cardIcon})
+      : super(key: key);
+  final String title;
+  final IconData cardIcon;
 
   @override
   State<AddEntryPage> createState() => _AddEntryPageState();
@@ -58,17 +60,14 @@ class _AddEntryPageState extends State<AddEntryPage> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.start,
-                            children: const [
+                            children: [
                               Icon(
-                                Icons.directions_walk_rounded,
+                                widget.cardIcon,
                                 color: Colors.grey,
-
                               ),
                               Text(
-                                'steps',
-                                style: TextStyle(
-                                    color: Colors.grey),
-
+                                '${widget.title}',
+                                style: TextStyle(color: Colors.grey),
                               ),
                             ],
                           )
@@ -112,40 +111,56 @@ class _AddEntryPageState extends State<AddEntryPage> {
                     min: 0,
                     max: 5,
                     divisions: 5,
-
                     onChanged: (double newValue) {
                       setState(() {
-                       sliderValue = newValue;
+                        sliderValue = newValue;
                       });
                     },
                     value: sliderValue),
-
               ),
             ),
             SizedBox(
               height: Get.height * 0.25,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children:  [
-                  Text("# Tags",style: TextStyle(fontSize: 24),),
+                children: [
+                  Text(
+                    "# Tags",
+                    style: TextStyle(fontSize: 24),
+                  ),
                   Wrap(
                     spacing: 8.0,
-                    children:  [
-                      InputChip(label: Text("Tag 1"),onDeleted: (){},),
-                      InputChip(label: Text("Tag 2"),onDeleted: (){},),
-                      InputChip(label: Text("Tag 3"),onDeleted: (){},),
-                      InputChip(label: Text("Tag 4"),onDeleted: (){},),
-                      InputChip(label: Text("Tag 5"),onDeleted: (){},),
-                      InputChip(label: Text("Tag 6"),onDeleted: (){},),
+                    children: [
+                      InputChip(
+                        label: Text("Tag 1"),
+                        onDeleted: () {},
+                      ),
+                      InputChip(
+                        label: Text("Tag 2"),
+                        onDeleted: () {},
+                      ),
+                      InputChip(
+                        label: Text("Tag 3"),
+                        onDeleted: () {},
+                      ),
+                      InputChip(
+                        label: Text("Tag 4"),
+                        onDeleted: () {},
+                      ),
+                      InputChip(
+                        label: Text("Tag 5"),
+                        onDeleted: () {},
+                      ),
+                      InputChip(
+                        label: Text("Tag 6"),
+                        onDeleted: () {},
+                      ),
                       // InputChip(label: Text("Tag 7"),onDeleted: (){},),
                       // InputChip(label: Text("Tag 8"),onDeleted: (){},),
                       // InputChip(label: Text("Tag 9"),onDeleted: (){},),
                       // InputChip(label: Text("Tag 10"),onDeleted: (){},),
-
                     ],
                   )
-
-
                 ],
               ),
             ),
@@ -174,38 +189,42 @@ class _AddEntryPageState extends State<AddEntryPage> {
                 padding: const EdgeInsets.only(left: 16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children:  [
+                  children: [
                     Row(
                       children: [
-                        Icon(Icons.chat_outlined,size: 36,),
-                        Text("Note",style: TextStyle(fontSize: 24),),
+                        Icon(
+                          Icons.chat_outlined,
+                          size: 36,
+                        ),
+                        Text(
+                          "Note",
+                          style: TextStyle(fontSize: 24),
+                        ),
                       ],
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: SizedBox(
                         height: 60,
-                        width: Get.width*0.4,
+                        width: Get.width * 0.4,
                         child: const TextField(
                           textAlign: TextAlign.start,
                           maxLines: 10,
                           decoration: InputDecoration(
                             border: OutlineInputBorder(
                               borderSide: BorderSide(color: Colors.purple),
-                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10.0)),
                             ),
                             prefixIcon: Icon(Icons.add),
                             hintText: 'Add note',
-
-
                           ),
-
                         ),
                       ),
                     ),
-                    SizedBox(width: Get.width*0.9,)
-
-
+                    SizedBox(
+                      width: Get.width * 0.9,
+                    )
                   ],
                 ),
               ),
@@ -214,9 +233,7 @@ class _AddEntryPageState extends State<AddEntryPage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Get.to(() => AddEntryPage());
-        },
+        onPressed: () {},
         child: const Icon(Icons.add),
       ),
     );

@@ -1,16 +1,11 @@
-# goatreport
+# goatreport (Metriport App UI Clone)
 
-health tracker app
+I made this UI clone when i was working on another Fitness tracking app with a lot of similarities. I thought it would be a good idea to make a clone of the UI and use it as a template to help me with deciding UI/UX flow of the app.
 
-## Getting Started
+This UI has a simple and minimal design with a lot of white space. It allows the user to clearly see the data and navigate through the app easily.
 
-This project is a starting point for a Flutter application.
+Since this is a fitness tracking app and deals with lots of data. Data visualization is a key part of the app.I have used similar charts, line graphs, doughnut charts, and bar graphs to visualize the data. Data visualization has a smooth animation and makes the app look more interactive. The animation effect and entire data visulaization is done using the [syncfusion_flutter_charts](https://pub.dev/packages/syncfusion_flutter_charts) package.
 
-A few resources to get you started if this is your first Flutter project:
+The fitness tracking app i was working in is still in limbo but thought i would share this UI clone with the community.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots

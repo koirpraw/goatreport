@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:goatreport/view/add_entry_page/add_entry_page.dart';
+import 'package:goatreport/view/graph_view_page/chart_graph_data/line_chart_default.dart';
+import 'package:goatreport/view/graph_view_page/widgets/data_tab_page.dart';
+import 'package:goatreport/view/graph_view_page/widgets/insights_tab_page.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:syncfusion_flutter_charts/sparkcharts.dart';
+import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
 
 class GraphViewPage extends StatefulWidget {
-  const GraphViewPage({Key? key}) : super(key: key);
+  const GraphViewPage({Key? key, required this.categoryPageTitle, required this.categoryPageIcon, required this.categoryChart}) : super(key: key);
+  final String categoryPageTitle;
+  final   Icon categoryPageIcon;
+  final Widget categoryChart ;
 
   @override
   State<GraphViewPage> createState() => _GraphViewPageState();
@@ -22,19 +30,23 @@ class _GraphViewPageState extends State<GraphViewPage>
     _tabController = TabController(length: 2, vsync: this);
   }
 
-    final _kTabPages = <Widget>[
-     Container(
-       color: Colors.grey.withOpacity(0.1),
-       height: Get.height * 0.5,
-       // width: Get.width * 0.9,
-       child: Center(child:Text('Insights')),),
-      Container(
-       decoration: BoxDecoration(
-         color: Colors.grey.withOpacity(0.1),),
-        height: Get.height * 0.5,
-        // width: Get.width * 0.9,
-        child: Center(child:Text('Insights')),),
-
+  //   final _kTabPages = <Widget>[
+  //    Container(
+  //      color: Colors.grey.withOpacity(0.1),
+  //      height: Get.height * 0.5,
+  //      // width: Get.width * 0.9,
+  //      child: Center(child:Text('Insights')),),
+  //     Container(
+  //      decoration: BoxDecoration(
+  //        color: Colors.grey.withOpacity(0.1),),
+  //       height: Get.height * 0.5,
+  //       // width: Get.width * 0.9,
+  //       child: Center(child:Text('Insights')),),
+  //
+  // ];
+  final _kTabPages = <Widget>[
+    InsightsTabPage(),
+    DataTabPage(),
   ];
 
   final _kTabs = <Tab>[
@@ -57,14 +69,14 @@ String dropdownValue = timePeriodItems.first;
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Icon(
-              Icons.directions_walk,
+              widget.categoryPageIcon.icon,
               color: Colors.black,
             ),
             Text(
-              "Steps",
+              widget.categoryPageTitle,
               style: TextStyle(color: Colors.black),
             ),
           ],
@@ -113,7 +125,10 @@ String dropdownValue = timePeriodItems.first;
                       child: Row(
                         children: [
                           IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                // SfDateRangePicker();
+                                showDatePicker(context: context, initialDate: DateTime.now(), firstDate: DateTime(1901,01,01), lastDate: DateTime(2025, 12, 31));
+                              },
                               icon: Icon(Icons.event_note_outlined)),
                           // TextButton(onPressed: () {}, child: Text('Y')),
                           TextButton(onPressed: () {}, child: Text('M')),
@@ -156,7 +171,7 @@ String dropdownValue = timePeriodItems.first;
                       ))
                 ],
               ),
-              SfCartesianChart(),
+              widget.categoryChart,
               SizedBox(
                 height: Get.height * 0.065,
                 child: TabBar(
@@ -182,7 +197,7 @@ String dropdownValue = timePeriodItems.first;
                 ),
               ),
               SizedBox(
-                height: Get.height * 0.25,
+                height: Get.height * 0.4,
                 width: Get.width * 0.9,
                 child: TabBarView(
                     children: _kTabPages,
@@ -198,7 +213,9 @@ String dropdownValue = timePeriodItems.first;
           borderRadius: BorderRadius.circular(16),
         ),
         backgroundColor: Colors.purple.shade900,
-        onPressed: () {},
+        onPressed: () {
+
+        },
         child: Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,

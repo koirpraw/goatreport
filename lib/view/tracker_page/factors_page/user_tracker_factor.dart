@@ -41,8 +41,9 @@ class UserTrackerFactorState extends State<UserTrackerFactor> {
           centerTitle: true,
           elevation: 0,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          iconTheme: const IconThemeData(color: Colors.black),
           title: Text(
-            'Factor',style: TextStyle(fontSize: 14, color: Colors.black),
+            'Factor',style: TextStyle(fontSize: 18, color: Colors.black),
           ),
         ),
         body: Padding(

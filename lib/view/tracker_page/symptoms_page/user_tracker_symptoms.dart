@@ -40,7 +40,11 @@ class UserTrackerSymptomsState extends State<UserTrackerSymptoms> {
           elevation: 0,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
           title: Text(
-            'Symptoms',
+            'Symptoms',style: TextStyle(color: Colors.black),
+          ),
+          centerTitle: true,
+          iconTheme: IconThemeData(
+            color: Colors.black, //change your color here
           ),
         ),
         body: SingleChildScrollView(

@@ -1,0 +1,943 @@
+[
+    {
+        "header_name": "Factors",
+        "header_id": 1,
+        "health_tag": [
+              {
+                "tag_id": 1,
+                "tag_name": "Sleep",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 1,
+                        "tag_id": 1,
+                        "category_name": "Insomnia",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 2,
+                        "tag_id": 1,
+                        "category_name": "Lucid Dream",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 3,
+                        "tag_id": 1,
+                        "category_name": "Work",
+                        "category_type": "Nightmare",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 4,
+                        "tag_id": 1,
+                        "category_name": "No dreams",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 5,
+                        "tag_id": 1,
+                        "category_name": "Normal dreams",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 6,
+                        "tag_id": 1,
+                        "category_name": "Over Slept",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 7,
+                        "tag_id": 1,
+                        "category_name": "Slept in",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 8,
+                        "tag_id": 1,
+                        "category_name": "Under Slept",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                        
+                    },
+                    {
+                        "category_id":9 ,
+                        "tag_id": 1,
+                        "category_name": "Woke Up Refreshed",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id":10 ,
+                        "tag_id": 1,
+                        "category_name": "Woke Up tired",
+                        "category_type": "Sleep",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 2,
+                "tag_name": "Social",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 11,
+                        "tag_id": 2,
+                        "category_name": "Very social",
+                        "category_type": "Social",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 12,
+                        "tag_id": 2,
+                        "category_name": "Some social",
+                        "category_type": "Social",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 13,
+                        "tag_id": 2,
+                        "category_name": "With family",
+                        "category_type": "Social",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 14,
+                        "tag_id": 2,
+                        "category_name": "With friends",
+                        "category_type": "Social",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 15,
+                        "tag_id": 2,
+                        "category_name": "With friends",
+                        "category_type": "Social",
+                        "category_status": 1
+                    }
+
+                ]
+            },
+            {
+                "tag_id": 3,
+                "tag_name": "Nutrition",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 16,
+                        "tag_id": 3,
+                        "category_name": "Ate healthy",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 17,
+                        "tag_id": 3,
+                        "category_name": "Dairy",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 18,
+                        "tag_id": 3,
+                        "category_name": "Fast food",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 19,
+                        "tag_id": 3,
+                        "category_name": "Fasting",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 20,
+                        "tag_id": 3,
+                        "category_name": "GMO",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 21,
+                        "tag_id": 3,
+                        "category_name": "Gluten",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 22,
+                        "tag_id": 3,
+                        "category_name": "Organic",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 23,
+                        "tag_id": 3,
+                        "category_name": "Overate",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 24,
+                        "tag_id": 3,
+                        "category_name": "Paleo",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 25,
+                        "tag_id": 3,
+                        "category_name": "Gluten",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 3,
+                        "category_name": "Soy",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 3,
+                        "category_name": "Sugar",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 28,
+                        "tag_id": 3,
+                        "category_name": "Vegan",
+                        "category_type": "Nutrition",
+                        "category_status": 1
+                    }
+                    
+                ]
+            },
+             {
+                "tag_id": 4,
+                "tag_name": "Exercise",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 29,
+                        "tag_id": 4,
+                        "category_name": "Cardio",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 30,
+                        "tag_id": 4,
+                        "category_name": "Gym",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 31,
+                        "tag_id": 4,
+                        "category_name": "high activity",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 32,
+                        "tag_id": 4,
+                        "category_name": "hike",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 33,
+                        "tag_id": 4,
+                        "category_name": "low activity",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 34,
+                        "tag_id": 4,
+                        "category_name": "moderate activity",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 35,
+                        "tag_id": 4,
+                        "category_name": "no exercise",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 36,
+                        "tag_id": 4,
+                        "category_name": "run",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 37,
+                        "tag_id": 4,
+                        "category_name": "swim",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 38,
+                        "tag_id": 4,
+                        "category_name": "walk",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 39,
+                        "tag_id": 4,
+                        "category_name": "Weights",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 40,
+                        "tag_id": 4,
+                        "category_name": "yoga",
+                        "category_type": "Exercise",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 5,
+                "tag_name": "Places",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 41,
+                        "tag_id": 5,
+                        "category_name": "City",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 42,
+                        "tag_id": 5,
+                        "category_name": "Driving",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 43,
+                        "tag_id": 5,
+                        "category_name": "Home",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 44,
+                        "tag_id": 5,
+                        "category_name": "Nature",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 45,
+                        "tag_id": 5,
+                        "category_name": "Office",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 46,
+                        "tag_id": 5,
+                        "category_name": "Travel",
+                        "category_type": "Places",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 47,
+                        "tag_id": 5,
+                        "category_name": "Work",
+                        "category_type": "Places",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 6,
+                "tag_name": "Hobbies",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 48,
+                        "tag_id": 5,
+                        "category_name": "Art",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 49,
+                        "tag_id": 5,
+                        "category_name": "Hiking",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 50,
+                        "tag_id": 5,
+                        "category_name": "Music",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 51,
+                        "tag_id": 5,
+                        "category_name": "Reading",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 52,
+                        "tag_id": 5,
+                        "category_name": "Sports",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 53,
+                        "tag_id": 5,
+                        "category_name": "TV/Film",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 54,
+                        "tag_id": 5,
+                        "category_name": "Video games",
+                        "category_type": "Hobbies",
+                        "category_status": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "header_name": "Food",
+        "header_id": 2,
+        "health_tag": [
+            {
+                "tag_id": 7,
+                "tag_name": "Breakast",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 55,
+                        "tag_id": 7,
+                        "category_name": "Bread",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 56,
+                        "tag_id": 7,
+                        "category_name": "Cereal",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 57,
+                        "tag_id": 7,
+                        "category_name": "Eggs",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 58,
+                        "tag_id": 7,
+                        "category_name": "Fruits",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 59,
+                        "tag_id": 7,
+                        "category_name": "Granola",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 60,
+                        "tag_id": 7,
+                        "category_name": "Potatoes",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 61,
+                        "tag_id": 7,
+                        "category_name": "Smoothie",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 62,
+                        "tag_id": 7,
+                        "category_name": "Spinach",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 63,
+                        "tag_id": 7,
+                        "category_name": "Yogurt",
+                        "category_type": "Breakast",
+                        "category_status": 1
+                    }
+                
+                ]
+            },
+            {
+                "tag_id": 8,
+                "tag_name": "Lunch",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 64,
+                        "tag_id": 8,
+                        "category_name": "Burger",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 65,
+                        "tag_id": 8,
+                        "category_name": "Curry",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 66,
+                        "tag_id": 8,
+                        "category_name": "Pizza",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 67,
+                        "tag_id": 8,
+                        "category_name": "Salad",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 68,
+                        "tag_id": 8,
+                        "category_name": "Sandwich",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 69,
+                        "tag_id": 8,
+                        "category_name": "Soup",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 70,
+                        "tag_id": 8,
+                        "category_name": "Stir fry",
+                        "category_type": "Lunch",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 9,
+                "tag_name": "Dinner",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 71,
+                        "tag_id": 9,
+                        "category_name": "Chicken",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 72,
+                        "tag_id": 9,
+                        "category_name": "Pasta",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 73,
+                        "tag_id": 9,
+                        "category_name": "Potatoes",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 74,
+                        "tag_id": 9,
+                        "category_name": "Rice",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 75,
+                        "tag_id": 9,
+                        "category_name": "Salad",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 76,
+                        "tag_id": 9,
+                        "category_name": "Salmon",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 77,
+                        "tag_id": 9,
+                        "category_name": "Steak",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 78,
+                        "tag_id": 9,
+                        "category_name": "Tofu",
+                        "category_type": "Dinner",
+                        "category_status": 1
+                    }
+                ]
+            },
+            {
+                "tag_id": 10,
+                "tag_name": "Snacks",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 79,
+                        "tag_id": 10,
+                        "category_name": "Fruit",
+                        "category_type": "Snacks",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 80,
+                        "tag_id": 10,
+                        "category_name": "Hummus",
+                        "category_type": "Snacks",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 81,
+                        "tag_id": 10,
+                        "category_name": "Nuts",
+                        "category_type": "Snacks",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 82,
+                        "tag_id": 10,
+                        "category_name": "Samosas",
+                        "category_type": "Snacks",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 83,
+                        "tag_id": 10,
+                        "category_name": "Veggies",
+                        "category_type": "Snacks",
+                        "category_status": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "header_name": "Water",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 84,
+                        "tag_id": 11,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 85,
+                        "tag_id": 11,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                 
+                ]
+            }
+ 
+        ]
+    },
+    {
+        "header_name": "Energy",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                ]
+            }
+           
+        ]
+    },
+    {
+        "header_name": "Mood",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                ]
+            }
+           
+        ]
+    },
+    {
+        "header_name": "Exercise",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                ]
+            }
+           
+        ]
+    },
+    {
+        "header_name": "Journal",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                ]
+            }
+           
+        ]
+    },
+    {
+        "header_name": "Spending",
+        "header_id": 3,
+        "health_tag": [
+            {
+                "tag_id": 11,
+                "tag_name": "Tags",
+                "tag_status": 1,
+                "categories": [
+                    {
+                        "category_id": 25,
+                        "tag_id": 6,
+                        "category_name": "Anxiety",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 26,
+                        "tag_id": 6,
+                        "category_name": "Stress",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    },
+                    {
+                        "category_id": 27,
+                        "tag_id": 6,
+                        "category_name": "Depression",
+                        "category_type": "Tags",
+                        "category_status": 1
+                    }
+                ]
+            }
+           
+        ]
+    }
+]

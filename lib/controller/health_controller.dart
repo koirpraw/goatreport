@@ -100,7 +100,7 @@ Future<bool>? insertHeathTag(HealthTag healthTag){
     var userDetails = await getUserDetails();
     var healthModel = HealthModel(
         id: healthCategory.catId,
-        userId: userDetails!.id,
+        // userId: userDetails!.id,
         healthName: healthCategory.catName,
         healthType: healthCategory.catType.toString(),
         healthUnit: HealthDataUnit.COUNT.name,

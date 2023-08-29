@@ -13,6 +13,7 @@ class _AreaChartState extends State<AreaChart> {
   @override
   Widget build(BuildContext context) {
     return SfCartesianChart(
+
       series: <ChartSeries<_ChartData, num>>[
         AreaSeries<_ChartData, num>(
           dataSource: <_ChartData>[
@@ -24,6 +25,7 @@ class _AreaChartState extends State<AreaChart> {
             _ChartData(2010, 57, 78),
             _ChartData(2011, 70, 84)
           ],
+
           xValueMapper: (_ChartData sales, _) => sales.year,
           yValueMapper: (_ChartData sales, _) => sales.sales,
           name: 'Sales',
