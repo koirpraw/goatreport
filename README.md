@@ -9,3 +9,8 @@ Since this is a fitness tracking app and deals with lots of data. Data visualiza
 The fitness tracking app i was working in is still in limbo but thought i would share this UI clone with the community.
 
 ## Screenshots
+        
+https://github.com/koirpraw/goatreport/assets/7278348/28454212-0e4b-4f3f-8636-40d8261632c0
+
+
+
