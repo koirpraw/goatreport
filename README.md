@@ -1,5 +1,7 @@
 # goatreport (Metriport App UI Clone)
 
+https://github.com/koirpraw/goatreport/assets/7278348/28454212-0e4b-4f3f-8636-40d8261632c0
+
 I made this UI clone when i was working on another Fitness tracking app with a lot of similarities. I thought it would be a good idea to make a clone of the UI and use it as a template to help me with deciding UI/UX flow of the app.
 
 This UI has a simple and minimal design with a lot of white space. It allows the user to clearly see the data and navigate through the app easily.
@@ -10,7 +12,7 @@ The fitness tracking app i was working in is still in limbo but thought i would 
 
 ## Screenshots
         
-https://github.com/koirpraw/goatreport/assets/7278348/28454212-0e4b-4f3f-8636-40d8261632c0
+
 
 
 
